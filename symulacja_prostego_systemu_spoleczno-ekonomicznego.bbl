@@ -1,0 +1,276 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{borsos2025}{report}{}{}
+      \name{author}{6}{}{%
+        {{hash=f38399fc14b8694a5ca4a9da5d09fb6f}{%
+           family={Borsos},
+           familyi={B\bibinitperiod},
+           given={András},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ae1488adf06d2eae0e6401dc781f6a58}{%
+           family={Carro},
+           familyi={C\bibinitperiod},
+           given={Adrián},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1ef0a5cb1fd4dce6dcd28d9912f18fa8}{%
+           family={Glielmo},
+           familyi={G\bibinitperiod},
+           given={Aldo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8c47b0d4dae2282083e6dabefdde2a45}{%
+           family={Hinterschweiger},
+           familyi={H\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=71fc982e8a8d8584904757377a30d784}{%
+           family={Kaszowska-Mojsa},
+           familyi={K\bibinithyphendelim M\bibinitperiod},
+           given={Jagoda},
+           giveni={J\bibinitperiod}}}%
+        {{hash=adfaf23b430f8abadb6fd04a68c7672a}{%
+           family={Uluc},
+           familyi={U\bibinitperiod},
+           given={Arzu},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Bank of England}%
+      }
+      \strng{namehash}{b7252725ed43935261b489a6c3a603a6}
+      \strng{fullhash}{b7252725ed43935261b489a6c3a603a6}
+      \strng{fullhashraw}{b7252725ed43935261b489a6c3a603a6}
+      \strng{bibnamehash}{b7252725ed43935261b489a6c3a603a6}
+      \strng{authorbibnamehash}{b7252725ed43935261b489a6c3a603a6}
+      \strng{authornamehash}{b7252725ed43935261b489a6c3a603a6}
+      \strng{authorfullhash}{b7252725ed43935261b489a6c3a603a6}
+      \strng{authorfullhashraw}{b7252725ed43935261b489a6c3a603a6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{1122}
+      \field{title}{Agent-Based Modeling at Central Banks: Recent Developments and New Challenges}
+      \field{type}{Staff Working Paper}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.bankofengland.co.uk/working-paper/2025/agent-based-modeling-at-central-banks-recent-developments-and-new-challenges
+      \endverb
+      \verb{url}
+      \verb https://www.bankofengland.co.uk/working-paper/2025/agent-based-modeling-at-central-banks-recent-developments-and-new-challenges
+      \endverb
+    \endentry
+    \entry{mi2024taxai}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=aff2ec48ba5b0be404aec8920757663b}{%
+           family={Mi},
+           familyi={M\bibinitperiod},
+           given={Qirui},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=245c3758729a2a6817a15bf75a4c6362}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Siyu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d3a2e45acb815e215a5ad1e99547d520}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a0484cb7d05509640954429962ad4a56}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Haifeng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f96ba34168becd0f01804a9a8ea6d5f3}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Shenghao},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2f3ea981fa5a715a69118b48e576a9f5}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Auckland, New Zealand}%
+      }
+      \strng{namehash}{803fd68426e1255cf5aea18933252988}
+      \strng{fullhash}{803fd68426e1255cf5aea18933252988}
+      \strng{fullhashraw}{803fd68426e1255cf5aea18933252988}
+      \strng{bibnamehash}{803fd68426e1255cf5aea18933252988}
+      \strng{authorbibnamehash}{803fd68426e1255cf5aea18933252988}
+      \strng{authornamehash}{803fd68426e1255cf5aea18933252988}
+      \strng{authorfullhash}{803fd68426e1255cf5aea18933252988}
+      \strng{authorfullhashraw}{803fd68426e1255cf5aea18933252988}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 23rd International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2024)}
+      \field{title}{{TaxAI}: A Dynamic Economic Simulator and Benchmark for Multi-Agent Reinforcement Learning}
+      \field{year}{2024}
+      \field{pages}{1390\bibrangedash 1399}
+      \range{pages}{10}
+    \endentry
+    \entry{mudd2024}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=0b057d707a26e6293d49b6276970219e}{%
+           family={Mudd},
+           familyi={M\bibinitperiod},
+           given={Andrea\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c62c53bdc416dd193eaf3ea42211e4fe}{%
+           family={Bal},
+           familyi={B\bibinitperiod},
+           given={Michèlle},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c2cd2fcad7c17380a1af2c390c81630e}{%
+           family={Verra},
+           familyi={V\bibinitperiod},
+           given={Sanne\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=55572c6cb8fea6a682b93efa8b1332ce}{%
+           family={Poelman},
+           familyi={P\bibinitperiod},
+           given={Maartje\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=3c767b160fa6916a14996ddeec65fd12}{%
+           family={Wit},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=4d86480f8507afa541f3a75020dc8223}{%
+           family={Kamphuis},
+           familyi={K\bibinitperiod},
+           given={Carlijn\bibnamedelimb B.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a2cbe0e0bbab853690931b1718dad1f5}
+      \strng{fullhash}{a2cbe0e0bbab853690931b1718dad1f5}
+      \strng{fullhashraw}{a2cbe0e0bbab853690931b1718dad1f5}
+      \strng{bibnamehash}{a2cbe0e0bbab853690931b1718dad1f5}
+      \strng{authorbibnamehash}{a2cbe0e0bbab853690931b1718dad1f5}
+      \strng{authornamehash}{a2cbe0e0bbab853690931b1718dad1f5}
+      \strng{authorfullhash}{a2cbe0e0bbab853690931b1718dad1f5}
+      \strng{authorfullhashraw}{a2cbe0e0bbab853690931b1718dad1f5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Behavioral Nutrition and Physical Activity}
+      \field{number}{1}
+      \field{title}{The Current State of Complex Systems Research on Socioeconomic Inequalities in Health and Health Behavior---A Systematic Scoping Review}
+      \field{volume}{21}
+      \field{year}{2024}
+      \field{pages}{13}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s12966-024-01562-1
+      \endverb
+    \endentry
+    \entry{palagi2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=a637f32d2dba6b424474bcff0ae511c5}{%
+           family={Palagi},
+           familyi={P\bibinitperiod},
+           given={Elisa},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9b42b1bc5de583a5fe2f1f6da5b93383}{%
+           family={Napoletano},
+           familyi={N\bibinitperiod},
+           given={Mauro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1ad6cdad67652912a0885baf04df9c31}{%
+           family={Roventini},
+           familyi={R\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=85d95037b7e4084a6f4a14a06c19e0d9}{%
+           family={Gaffard},
+           familyi={G\bibinitperiod},
+           given={Jean-Luc},
+           giveni={J\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5e0a0c7de269fac9223a664def4b88f}
+      \strng{fullhash}{c5e0a0c7de269fac9223a664def4b88f}
+      \strng{fullhashraw}{c5e0a0c7de269fac9223a664def4b88f}
+      \strng{bibnamehash}{c5e0a0c7de269fac9223a664def4b88f}
+      \strng{authorbibnamehash}{c5e0a0c7de269fac9223a664def4b88f}
+      \strng{authornamehash}{c5e0a0c7de269fac9223a664def4b88f}
+      \strng{authorfullhash}{c5e0a0c7de269fac9223a664def4b88f}
+      \strng{authorfullhashraw}{c5e0a0c7de269fac9223a664def4b88f}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Economic Modelling}
+      \field{title}{An Agent-Based Model of Trickle-Up Growth and Income Inequality}
+      \field{volume}{129}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1016/j.econmod.2023.106490
+      \endverb
+    \endentry
+    \entry{villafane2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d24ca8ba78f20d0bed7fdc28698616fa}{%
+           family={Villafañe},
+           familyi={V\bibinitperiod},
+           given={Gastón},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e1fb776a9c0ddc1a44a23bd8a731f059}{%
+           family={Giordano},
+           familyi={G\bibinitperiod},
+           given={Lautaro},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1bbbd259be08d436279db27a07ad7772}{%
+           family={Laguna},
+           familyi={L\bibinitperiod},
+           given={María\bibnamedelima Fabiana},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{393fa8123be3cc21fab37cfab9a18abd}
+      \strng{fullhash}{393fa8123be3cc21fab37cfab9a18abd}
+      \strng{fullhashraw}{393fa8123be3cc21fab37cfab9a18abd}
+      \strng{bibnamehash}{393fa8123be3cc21fab37cfab9a18abd}
+      \strng{authorbibnamehash}{393fa8123be3cc21fab37cfab9a18abd}
+      \strng{authornamehash}{393fa8123be3cc21fab37cfab9a18abd}
+      \strng{authorfullhash}{393fa8123be3cc21fab37cfab9a18abd}
+      \strng{authorfullhashraw}{393fa8123be3cc21fab37cfab9a18abd}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{title}{Wealth Inequality in Agent-Based Economies: The Dominant Role of Social Protection over Growth}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.2139/ssrn.5496393
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

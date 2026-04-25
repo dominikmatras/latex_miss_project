@@ -1,0 +1,269 @@
+%%%%%% -*- Coding: utf-8-unix; Mode: latex
+
+\documentclass[polish]{projectreport}
+
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{subfigure}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{grffile}
+
+\usepackage[bookmarks=false]{hyperref}
+\hypersetup{colorlinks,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue}
+
+\usepackage{indentfirst}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage[ruled,linesnumbered,lined]{algorithm2e}
+\usepackage[svgnames]{xcolor}
+\usepackage{inconsolata}
+\usepackage{fancyhdr}
+
+\usepackage{csquotes}
+\DeclareQuoteStyle[quotes]{polish}
+  {\quotedblbase}
+  {\textquotedblright}
+  [0.05em]
+  {\quotesinglbase}
+  {\fixligatures\textquoteright}
+\DeclareQuoteAlias[quotes]{polish}{polish}
+
+\usepackage[
+style=numeric,
+sorting=nyt,
+isbn=false,
+doi=true,
+url=true,
+backref=false,
+backrefstyle=none,
+maxnames=10,
+giveninits=true,
+abbreviate=true,
+defernumbers=false,
+backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+    backgroundcolor=\color{gray!5},
+    commentstyle=\it\color{Green},
+    keywordstyle=\color{Red},
+    stringstyle=\color{Blue},
+    numberstyle=\tiny\color{Black},
+    escapeinside=`',
+    frame=single,
+    tabsize=2,
+    rulecolor=\color{black!30},
+    title=\lstname,
+    breaklines=true,
+    breakatwhitespace=true,
+    framextopmargin=2pt,
+    framexbottommargin=2pt,
+    extendedchars=false,
+    captionpos=b,
+    abovecaptionskip=5pt,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\SetAlgorithmName{\LangAlgorithm}{\LangAlgorithmRef}{\LangListOfAlgorithms}
+
+\renewcommand{\lstlistingname}{\LangListing}
+\renewcommand\lstlistlistingname{\LangListOfListings}
+
+\newcolumntype{Y}{>{\small\centering\arraybackslash}X}
+
+\captionsetup[figure]{skip=5pt,position=bottom}
+\captionsetup[table]{skip=5pt,position=top}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{Dawid Czesak \and Dominik Matras}
+
+\title{Symulacja prostego systemu spo{\l}eczno-ekonomicznego}
+
+\date{
+    {\small \texttt{dczesak@student.wszib.edu.pl}\\[1ex]
+    \texttt{dmatras@student.wszib.edu.pl}\\[2ex]
+    \the\year}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\SectionTitleIntroduction}
+\label{sec:introduction}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Wprowadzenie}
+\label{sec:intro}
+
+Systemy spo\l{}eczno-ekonomiczne s\k{a} z\l{}o\.{z}onymi uk\l{}adami, w~kt\'orych wiele jednostek podejmuje
+decyzje dotycz\k{a}ce pracy, konsumpcji, oszcz\k{e}dzania, wymiany d\'obr oraz korzystania
+z~dost\k{e}pnych zasob\'ow. Zachowania pojedynczych uczestnik\'ow systemu mog\k{a} prowadzi\'{c} do
+powstawania zjawisk widocznych dopiero na poziomie ca\l{}ej populacji, takich jak
+nier\'owno\'sci maj\k{a}tkowe, koncentracja kapita\l{}u, zmiany poziomu dobrobytu czy r\'o\.{z}nice
+w~mo\.{z}liwo\'sciach rozwoju poszczeg\'olnych grup spo\l{}ecznych.
+
+Tradycyjne modele ekonomiczne cz\k{e}sto opisuj\k{a} gospodark\k{e} za pomoc\k{a} r\'owna\'n i~za\l{}o\.{z}e\'n
+upraszczaj\k{a}cych, na przyk\l{}ad zak\l{}adaj\k{a}c racjonalno\'s\'{c} uczestnik\'ow rynku lub r\'ownowag\k{e}
+systemu. W~praktyce rzeczywiste spo\l{}ecze\'nstwa i~gospodarki s\k{a} bardziej dynamiczne,
+a~ich uczestnicy r\'o\.{z}ni\k{a} si\k{e} mi\k{e}dzy sob\k{a} pod wzgl\k{e}dem dochodu, maj\k{a}tku, sposobu
+podejmowania decyzji, poziomu ryzyka czy dost\k{e}pu do zasob\'ow. Z~tego powodu coraz
+cz\k{e}\'sciej stosuje si\k{e} symulacje komputerowe, kt\'ore pozwalaj\k{a} obserwowa\'{c}, jak proste
+regu\l{}y zachowania pojedynczych jednostek wp\l{}ywaj\k{a} na dzia\l{}anie ca\l{}ego systemu.
+
+Jednym z~popularnych podej\'s\'{c} do badania takich zjawisk jest modelowanie agentowe,
+czyli \emph{Agent-Based Modeling} (ABM). W~tego typu modelach system sk\l{}ada si\k{e}
+z~wielu autonomicznych agent\'ow, kt\'orzy posiadaj\k{a} okre\'slone cechy, podejmuj\k{a} decyzje
+oraz wchodz\k{a} ze sob\k{a} w~interakcje. Dzi\k{e}ki temu mo\.{z}na analizowa\'{c}, jak lokalne dzia\l{}ania
+pojedynczych uczestnik\'ow prowadz\k{a} do globalnych efekt\'ow, takich jak wzrost nier\'owno\'sci,
+stabilizacja systemu lub jego destabilizacja.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Modelowanie agentowe w systemach spo\l{}eczno-ekonomicznych}
+\label{sec:abm}
+
+Modelowanie agentowe jest szczeg\'olnie przydatne w~analizie system\'ow
+spo\l{}eczno-ekonomicznych, poniewa\.{z} umo\.{z}liwia uwzgl\k{e}dnienie r\'o\.{z}norodno\'sci uczestnik\'ow
+systemu. Ka\.{z}dy agent mo\.{z}e mie\'{c} inne zasoby finansowe, inne potrzeby, inne strategie
+dzia\l{}ania oraz inn\k{a} sk\l{}onno\'s\'{c} do oszcz\k{e}dzania lub wydawania pieni\k{e}dzy. W~przeciwie\'nstwie
+do modeli opartych wy\l{}\k{a}cznie na warto\'sciach \'srednich, modele agentowe pozwalaj\k{a}
+obserwowa\'{c} zachowanie ca\l{}ej populacji oraz pojedynczych jednostek.
+
+W~kontekcie prostego systemu spo\l{}eczno-ekonomicznego agentami mog\k{a} by\'{c} na przyk\l{}ad
+osoby, gospodarstwa domowe, firmy lub instytucje. Agenci mog\k{a} posiada\'{c} okre\'slony
+maj\k{a}tek pocz\k{a}tkowy, otrzymywa\'{c} doch\'od, ponosi\'{c} koszty \.{z}ycia, handlowa\'{c} z~innymi
+agentami, p\l{}aci\'{c} podatki lub korzysta\'{c} z~pomocy spo\l{}ecznej. Zmiana jednego parametru,
+na przyk\l{}ad wysoko\'sci podatku albo sposobu redystrybucji \'srodk\'ow, mo\.{z}e wp\l{}ywa\'{c} na
+ko\'ncowy poziom nier\'owno\'sci w~ca\l{}ej populacji.
+
+W~badaniach naukowych modele agentowe s\k{a} wykorzystywane mi\k{e}dzy innymi do analizy
+rynk\'ow, przep\l{}ywu pieni\k{e}dzy, nier\'owno\'sci dochodowych, wp\l{}ywu polityki spo\l{}ecznej,
+zachowa\'n konsument\'ow oraz proces\'ow gospodarczych. Przegl\k{a}d bada\'n z~2024~roku dotycz\k{a}cy
+zastosowania modelowania agentowego w~gospodarce cyrkularnej wskazuje, \.{z}e metoda ta
+pozwala analizowa\'{c} zachowania producent\'ow, konsument\'ow oraz procesy dyfuzji innowacji
+w~systemach ekonomicznych~\cite{mudd2024}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Przegl\k{a}d aktualnego stanu bada\'n}
+\label{sec:related}
+
+W~ostatnich latach modelowanie agentowe jest coraz cz\k{e}\'sciej stosowane do badania
+nier\'owno\'sci spo\l{}ecznych i~ekonomicznych. Punktem wyj\'scia dla orientacji w~tym obszarze
+mo\.{z}e by\'{c} systematyczny przegl\k{a}d Mudda i~wsp\'o\l{}autor\'ow~\cite{mudd2024}, kt\'orzy skatalogowali
+modele symulacyjne i~koncepcyjne dotycz\k{a}ce nier\'owno\'sci spo\l{}eczno-ekonomicznych
+w~zdrowiu i~zachowaniach zdrowotnych. Przegl\k{a}d ten ujawni\l{}, \.{z}e wi\k{e}kszo\'s\'{c} istniej\k{a}cych
+modeli koncentruje si\k{e} na po\'srednich determinantach zdrowia, pomijaj\k{a}c strukturalne
+czynniki systemowe. Niniejsza praca przyjmuje odmienne podej\'scie -- zamiast mapowa\'{c}
+istniej\k{a}ce modele, budujemy w\l{}asn\k{a} symulacj\k{e} od podstaw, co pozwala pe\l{}niej
+kontrolowa\'{c} za\l{}o\.{z}enia i~parametry systemu.
+
+Bezpo\'srednio zwi\k{a}zane z~tematyk\k{a} niniejszej pracy s\k{a} badania nad mechanizmami powstawania
+nier\'owno\'sci dochodowych i~maj\k{a}tkowych. Palagi i~wsp\'o\l{}autorzy~\cite{palagi2023} zbudowali
+model agentowy badaj\k{a}cy jednocze\'snie dynamik\k{e} wzrostu i~podzia\l{}u dochod\'ow, uwzgl\k{e}dniaj\k{a}c
+ograniczenia kredytowe i~nier\'owny dost\k{e}p do inwestycji. Co istotne, zamiast tradycyjnego
+efektu \emph{trickle-down}, zaobserwowali oni odwrotny mechanizm -- redystrybucja
+w~stron\k{e} biedniejszych gospodarstw zwi\k{e}ksza\l{}a popyt i~korzystnie wp\l{}ywa\l{}a na doch\'ody
+ca\l{}ej populacji. W~odniesieniu do naszego projektu, powy\.{z}sza praca potwierdza, \.{z}e ju\.{z}
+stosunkowo prosty model agentowy mo\.{z}e odtworzy\'{c} nieliniowe zale\.{z}no\'sci mi\k{e}dzy
+redystrybucj\k{a} a~wzrostem -- zjawisko trudne do uchwycenia w~modelach analitycznych.
+
+Innym reprezentatywnym podej\'sciem jest simulator TaxAI~\cite{mi2024taxai}, kt\'ory stawia
+sobie znacznie bardziej ambitny cel: optymalizacj\k{e} polityki podatkowej przy u\.{z}yciu
+wieloagentowego uczenia ze wzmocnieniem na populacji nawet 10\,000 agent\'ow. O~ile
+TaxAI dostarcza zaawansowanego narz\k{e}dzia dla decydent\'ow, jego z\l{}o\.{z}ono\'s\'{c}
+utrudnia interpretacj\k{e} podstawowych mechanizm\'ow rz\k{a}dz\k{a}cych nierównowagi\.{a} w~systemie.
+Nasza symulacja \'swiadomie rezygnuje z~mechanizm\'ow uczenia maszynowego na rzecz
+przejrzysto\'sci -- celem jest zrozumienie, nie optymalizacja.
+
+Najbli\.{z}szy tematycznie jest model Villafa\~{n}e i~wsp\'o\l{}autor\'ow~\cite{villafane2025}, oparty
+na schemacie Yard-Sale, w~kt\'orym agenci losowo wymieniaj\k{a} mi\k{e}dzy sob\k{a} cz\k{e}\'s\'{c} maj\k{a}tku.
+Badania pokaza\l{}y, \.{z}e bez mechanizm\'ow koryguj\k{a}cych nawet tak proste regu\l{}y transakcyjne
+prowadz\k{a} nieuchronnie do skrajnej koncentracji zasob\'ow. Nasz model inspiruje si\k{e}
+tym podej\'sciem, rozszerzaj\k{a}c je o~doch\'od, koszty \.{z}ycia i~proste formy redystrybucji,
+co pozwala zbada\'{c} warunki brzegowe powstawania i~ograniczania nier\'owno\'sci.
+
+Szerszy kontekst zastosowa\'n ABM w~instytucjach decyzyjnych zarysowuj\k{a} Borsos
+i~wsp\'o\l{}autorzy~\cite{borsos2025} w~przegl\k{a}dzie obejmuj\k{a}cym dwie dekady bada\'n bank\'ow
+centralnych. Zestawienie to pokazuje, \.{z}e modele agentowe przesz\l{}y d\l{}ug\k{a} drog\k{e} od narz\k{e}dzi
+akademickich do realnych narz\k{e}dzi analitycznych wspieraj\k{a}cych polityk\k{e} makroostro\.{z}no\'sciow\k{a}.
+Stanowi to dodatkowe uzasadnienie dla podej\'scia przyj\k{e}tego w~niniejszej pracy --
+nawet uproszczony model agentowy mo\.{z}e pe\l{}ni\'{c} rol\k{e} u\.{z}ytecznego narz\k{e}dzia do analizy
+mechanizm\'ow spo\l{}eczno-ekonomicznych.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Cel pracy}
+\label{sec:goal}
+
+Celem pracy jest opracowanie prostej symulacji systemu spo\l{}eczno-ekonomicznego opartej
+na modelu agentowym. W~proponowanym modelu populacja sk\l{}ada si\k{e} z~grupy agent\'ow
+reprezentuj\k{a}cych uczestnik\'ow systemu ekonomicznego. Ka\.{z}dy agent posiada okre\'slony
+poziom maj\k{a}tku, mo\.{z}e uzyskiwa\'{c} doch\'od, ponosi\'{c} koszty \.{z}ycia oraz wchodzi\'{c}
+w~interakcje ekonomiczne z~innymi agentami.
+
+Symulacja ma umo\.{z}liwi\'{c} obserwacj\k{e} zmian zachodz\k{a}cych w~czasie, w~szczeg\'olno\'sci:
+\begin{itemize}
+  \item zmian poziomu maj\k{a}tku poszczeg\'olnych agent\'ow,
+  \item powstawania nier\'owno\'sci ekonomicznych,
+  \item wp\l{}ywu prostych regu\l{} wymiany i~redystrybucji na struktur\k{e} maj\k{a}tkow\k{a} populacji,
+  \item zale\.{z}no\'sci mi\k{e}dzy decyzjami pojedynczych agent\'ow a~zachowaniem ca\l{}ego systemu.
+\end{itemize}
+
+Praca ma charakter eksperymentalny. Jej celem nie jest dok\l{}adne odwzorowanie
+rzeczywistej gospodarki, lecz pokazanie, w~jaki spos\'ob za pomoc\k{a} prostego modelu
+komputerowego mo\.{z}na analizowa\'{c} podstawowe mechanizmy spo\l{}eczno-ekonomiczne.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Zakres dalszej cz\k{e}\'sci sprawozdania}
+\label{sec:scope}
+
+W~dalszej cz\k{e}\'sci sprawozdania zostanie przedstawione sformu\l{}owanie problemu badawczego
+oraz opis zaproponowanego rozwi\k{a}zania. Nast\k{e}pnie opisany zostanie model symulacyjny,
+jego za\l{}o\.{z}enia, parametry oraz zastosowane algorytmy. Kolejna cz\k{e}\'s\'{c} b\k{e}dzie zawiera\l{}a
+wyniki eksperyment\'ow symulacyjnych, ich analiz\k{e} oraz interpretacj\k{e}. Na ko\'ncu pracy
+zostan\k{a} przedstawione wnioski oraz mo\.{z}liwe kierunki dalszego rozwoju modelu.
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{\SectionTitleProblemSolution}
+% \label{sec:solution}
+
+% \emph{Sformu\l{}owanie problemu badawczego. Propozycja rozwi\k{a}zania: szczeg\'o\l{}owy opis
+% algorytm\'ow/systemu/frameworka.}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{\SectionTitleExperiments}
+% \label{sec:experiments}
+
+% \emph{Wyniki bada\'n eksperymentalnych wraz ze szczeg\'o\l{}owymi analizami i~komentarzami.}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{\SectionTitleSummary}
+% \label{sec:conclusions}
+
+% \emph{Podsumowanie wynik\'ow bada\'n, wnioski oraz plany dalszych prac.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printbibliography
+
+\end{document}
