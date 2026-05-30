@@ -59,7 +59,7 @@ backend=biber]{biblatex}
     escapeinside=`',
     frame=single,
     tabsize=2,
-    rulecolor=\color{black!30},
+    rulecolor=\color{black!80},
     title=\lstname,
     breaklines=true,
     breakatwhitespace=true,
@@ -244,24 +244,189 @@ jego za\l{}o\.{z}enia, parametry oraz zastosowane algorytmy. Kolejna cz\k{e}\'s\
 wyniki eksperyment\'ow symulacyjnych, ich analiz\k{e} oraz interpretacj\k{e}. Na ko\'ncu pracy
 zostan\k{a} przedstawione wnioski oraz mo\.{z}liwe kierunki dalszego rozwoju modelu.
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{\SectionTitleProblemSolution}
-% \label{sec:solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\SectionTitleProblemSolution}
+\label{sec:solution}
 
-% \emph{Sformu\l{}owanie problemu badawczego. Propozycja rozwi\k{a}zania: szczeg\'o\l{}owy opis
-% algorytm\'ow/systemu/frameworka.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sformu\l{}owanie problemu badawczego}
+\label{sec:problem}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{\SectionTitleExperiments}
-% \label{sec:experiments}
+Problemem badawczym analizowanym w~niniejszej pracy jest wp\l{}yw prostych interakcji
+ekonomicznych pomi\k{e}dzy agentami na powstawanie nier\'owno\'sci maj\k{a}tkowych w~populacji.
+W~rzeczywistych systemach spo\l{}eczno-ekonomicznych uczestnicy rynku r\'o\.{z}ni\k{a} si\k{e}
+poziomem dochod\'ow, wydatk\'ow oraz mo\.{z}liwo\'sciami gromadzenia kapita\l{}u. Nawet niewielkie
+r\'o\.{z}nice pomi\k{e}dzy jednostkami mog\k{a} z~czasem prowadzi\'{c} do znacznej koncentracji maj\k{a}tku.
 
-% \emph{Wyniki bada\'n eksperymentalnych wraz ze szczeg\'o\l{}owymi analizami i~komentarzami.}
+Celem symulacji jest zbadanie, w~jaki spos\'ob podstawowe mechanizmy ekonomiczne,
+takie jak uzyskiwanie dochodu, ponoszenie koszt\'ow \.{z}ycia, wymiana \'srodk\'ow finansowych
+oraz redystrybucja, wp\l{}ywaj\k{a} na struktur\k{e} maj\k{a}tkow\k{a} ca\l{}ej populacji agent\'ow.
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{\SectionTitleSummary}
-% \label{sec:conclusions}
+W~modelu przyj\k{e}to nast\k{e}puj\k{a}ce za\l{}o\.{z}enia:
+\begin{itemize}
+  \item system sk\l{}ada si\k{e} z~okre\'slonej liczby agent\'ow,
+  \item ka\.{z}dy agent posiada pocz\k{a}tkowy maj\k{a}tek,
+  \item w~ka\.{z}dej iteracji agent otrzymuje doch\'od,
+  \item agent ponosi koszty \.{z}ycia,
+  \item agenci mog\k{a} losowo wymienia\'{c} \'srodki finansowe,
+  \item mo\.{z}liwe jest zastosowanie prostego mechanizmu podatkowego i~redystrybucji.
+\end{itemize}
 
-% \emph{Podsumowanie wynik\'ow bada\'n, wnioski oraz plany dalszych prac.}
+Symulacja ma umo\.{z}liwi\'{c} obserwacj\k{e} zmian zachodz\k{a}cych w~czasie oraz analiz\k{e} wp\l{}ywu
+poszczeg\'olnych parametr\'ow modelu na poziom nier\'owno\'sci ekonomicznych.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Opis modelu symulacyjnego}
+\label{sec:model}
+
+Opracowany model zosta\l{} zbudowany zgodnie z~podej\'sciem agentowym
+(\emph{Agent-Based Modeling}). Ka\.{z}dy agent reprezentuje pojedynczego uczestnika
+systemu spo\l{}eczno-ekonomicznego i~posiada nast\k{e}puj\k{a}ce cechy:
+\begin{itemize}
+  \item identyfikator agenta,
+  \item poziom maj\k{a}tku,
+  \item doch\'od uzyskiwany w~ka\.{z}dej iteracji,
+  \item koszty utrzymania,
+  \item histori\k{e} zmian maj\k{a}tku.
+\end{itemize}
+
+Symulacja przebiega w~dyskretnych krokach czasowych. W~ka\.{z}dej iteracji wykonywane
+s\k{a} nast\k{e}puj\k{a}ce operacje:
+\begin{itemize}
+  \item przyznanie dochodu agentom,
+  \item odj\k{e}cie koszt\'ow \.{z}ycia,
+  \item losowy wyb\'or agent\'ow uczestnicz\k{a}cych w~wymianie \'srodk\'ow,
+  \item aktualizacja poziomu maj\k{a}tku,
+  \item obliczenie statystyk systemu.
+\end{itemize}
+
+Maj\k{a}tek agenta w~kolejnej iteracji mo\.{z}na opisa\'{c} r\'ownaniem:
+\begin{equation}
+  W_i(t+1) = W_i(t) + I_i - C_i + T_i
+\end{equation}
+gdzie:
+\begin{itemize}
+  \item $W_i(t)$ --- maj\k{a}tek agenta $i$ w~chwili $t$,
+  \item $I_i$ --- doch\'od agenta,
+  \item $C_i$ --- koszty \.{z}ycia,
+  \item $T_i$ --- wynik transakcji ekonomicznych.
+\end{itemize}
+
+Ca\l{}kowity maj\k{a}tek systemu mo\.{z}na opisa\'{c} wzorem:
+\begin{equation}
+  W_{\mathrm{total}} = \sum_{i=1}^{n} W_i
+\end{equation}
+gdzie $n$ oznacza liczb\k{e} agent\'ow uczestnicz\k{a}cych w~symulacji.
+
+W~celu analizy nier\'owno\'sci maj\k{a}tkowych mo\.{z}liwe jest r\'ownie\.{z} wykorzystanie
+wsp\'o\l{}czynnika Giniego:
+\begin{equation}
+  G = \frac{\displaystyle\sum_{i=1}^{n}\sum_{j=1}^{n} |W_i - W_j|}{2n^2\,\bar{W}}
+\end{equation}
+gdzie:
+\begin{itemize}
+  \item $G$ --- wsp\'o\l{}czynnik Giniego,
+  \item $W_i,\, W_j$ --- maj\k{a}tek agent\'ow,
+  \item $\bar{W}$ --- \'sredni maj\k{a}tek populacji.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Wykorzystywane algorytmy}
+\label{sec:algorithms}
+
+W~projekcie zastosowano prosty algorytm symulacji agentowej oparty na iteracyjnym
+przetwarzaniu populacji agentów. \\[1\baselineskip]
+
+\begin{algorithm}[H]
+\caption{Algorytm symulacji systemu spo\l{}eczno-ekonomicznego}
+\label{alg:simulation}
+\KwIn{Liczba agent\'ow $n$, liczba iteracji $T$, parametry modelu}
+\KwOut{Historia maj\k{a}tk\'ow agent\'ow, statystyki systemu}
+Utw\'orz populacj\k{e} $n$ agent\'ow\;
+Nadaj agentom pocz\k{a}tkowy maj\k{a}tek\;
+\For{$t \leftarrow 1$ \KwTo $T$}{
+  \ForEach{agent $i$}{
+    Przyznaj doch\'od $I_i$\;
+    Odejmij koszty utrzymania $C_i$\;
+  }
+  Wylosuj pary agent\'ow wykonuj\k{a}cych transakcj\k{e}\;
+  Zaktualizuj maj\k{a}tek agent\'ow\;
+  Zapisz statystyki systemu\;
+}
+Wy\'swietl wyniki ko\'ncowe\;
+\end{algorithm}
+
+Przyk\l{}adowy fragment kodu odpowiedzialny za aktualizacj\k{e} maj\k{a}tku agent\'ow
+przedstawiono na Listingu~\ref{lst:agent}.
+
+\clearpage
+\begin{lstlisting}[language=Python, caption={Fragment kodu symulacji agentowej}, label={lst:agent}]
+import random
+
+class Agent:
+    def __init__(self, wealth):
+        self.wealth = wealth
+
+    def update(self):
+        income = random.randint(5, 15)
+        expenses = random.randint(3, 10)
+        self.wealth += income
+        self.wealth -= expenses
+
+agents = [Agent(100) for _ in range(100)]
+
+for step in range(50):
+    for agent in agents:
+        agent.update()
+\end{lstlisting}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Wykorzystywane biblioteki i~technologie}
+\label{sec:tech}
+
+Projekt zostanie zaimplementowany w~j\k{e}zyku Python ze wzgl\k{e}du na jego prostot\k{e}
+oraz du\.{z}\k{a} liczb\k{e} bibliotek wspieraj\k{a}cych analiz\k{e} danych i~symulacje komputerowe.
+W~projekcie planowane jest wykorzystanie nast\k{e}puj\k{a}cych bibliotek:
+\begin{itemize}
+  \item \texttt{random} --- generowanie losowych zdarze\'n i~transakcji,
+  \item \texttt{numpy} --- operacje numeryczne i~obliczenia statystyczne,
+  \item \texttt{matplotlib} --- wizualizacja wynik\'ow symulacji,
+  \item \texttt{pandas} --- analiza i~przechowywanie danych,
+  \item \texttt{mesa} (opcjonalnie) --- framework do modelowania agentowego.
+\end{itemize}
+
+Do implementacji i~uruchamiania projektu wykorzystane zostanie \'srodowisko Python~3
+oraz Visual Studio Code lub PyCharm.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Za\l{}o\.{z}enia i~ograniczenia modelu}
+\label{sec:limitations}
+
+Opracowany model ma charakter uproszczony i~nie odwzorowuje wszystkich mechanizm\'ow
+wyst\k{e}puj\k{a}cych w~rzeczywistej gospodarce. W~szczeg\'olno\'sci model:
+\begin{itemize}
+  \item nie uwzgl\k{e}dnia inflacji,
+  \item nie modeluje rynku pracy,
+  \item nie zawiera systemu bankowego,
+  \item nie uwzgl\k{e}dnia kredyt\'ow ani inwestycji,
+  \item zak\l{}ada uproszczone zachowanie agent\'ow.
+\end{itemize}
+
+Pomimo uproszcze\'n model pozwala analizowa\'{c} podstawowe mechanizmy prowadz\k{a}ce do
+zmian poziomu nier\'owno\'sci ekonomicznych i~mo\.{z}e stanowi\'{c} punkt wyj\'scia do dalszego
+rozwoju bardziej zaawansowanych symulacji.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\SectionTitleExperiments}
+\label{sec:experiments}
+
+\emph{Wyniki bada\'n eksperymentalnych wraz ze szczeg\'o\l{}owymi analizami i~komentarzami.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\SectionTitleSummary}
+\label{sec:conclusions}
+
+\emph{Podsumowanie wynik\'ow bada\'n, wnioski oraz plany dalszych prac.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \printbibliography
