@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  5 JUL 2026 09:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.25)  5 JUL 2026 09:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -815,7 +815,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'polish'.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 109.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 110.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (./symulacja_prostego_systemu_spoleczno-ekonomicznego.aux
@@ -824,24 +824,24 @@ Package babel Info: 'polish' activates 'polish' shorthands.
 )
 \openout1 = `symulacja_prostego_systemu_spoleczno-ekonomicznego.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
  (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count475
@@ -896,7 +896,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 109.
+Package hyperref Info: Link coloring ON on input line 110.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -904,13 +904,13 @@ Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
 )
-LaTeX Info: Redefining \microtypecontext on input line 109.
-Package microtype Info: Applying patch `item' on input line 109.
-Package microtype Info: Applying patch `toc' on input line 109.
-Package microtype Info: Applying patch `eqnum' on input line 109.
-Package microtype Info: Applying patch `footnote' on input line 109.
-Package microtype Info: Applying patch `verbatim' on input line 109.
-LaTeX Info: Redefining \microtypesetup on input line 109.
+LaTeX Info: Redefining \microtypecontext on input line 110.
+Package microtype Info: Applying patch `item' on input line 110.
+Package microtype Info: Applying patch `toc' on input line 110.
+Package microtype Info: Applying patch `eqnum' on input line 110.
+Package microtype Info: Applying patch `footnote' on input line 110.
+Package microtype Info: Applying patch `verbatim' on input line 110.
+LaTeX Info: Redefining \microtypesetup on input line 110.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -937,9 +937,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'symulacja_prostego_systemu_spoleczno-ekonomicznego.bbl' found.
  (./symulacja_prostego_systemu_spoleczno-ekonomicznego.bbl)
-Package biblatex Info: Reference section=0 on input line 109.
-Package biblatex Info: Reference segment=0 on input line 109.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 112.
+Package biblatex Info: Reference section=0 on input line 110.
+Package biblatex Info: Reference segment=0 on input line 110.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 113.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -947,15 +947,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ztmcm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 112.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 113.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 112.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 113.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 112.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 113.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msa.cfg
@@ -963,80 +963,80 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 112.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 113.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 112.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 113.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 112.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 113.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 112.
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 112.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 113.
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 113.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.95pt on input line 112.
+(Font)              scaled to size 10.95pt on input line 113.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+ [1
 
-Overfull \hbox (25.66696pt too wide) in paragraph at lines 149--155
+{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}]
+Overfull \hbox (25.66696pt too wide) in paragraph at lines 173--179
 []\T1/ptm/m/n/12 (-20) Modelowanie agen-towe jest szcze-gól-nie przy-datne w ana-li-zie sys-te-mów spoªeczno-ekonomicznych,
  []
 
-[1
-
-{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}] [2]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 229.
+[2]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 253.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [3]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 306.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 330.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 306.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 330.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 306.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 330.
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 339--341
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 
  []
 
-[5] (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
+[5] [6] (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 365.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 389.
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 12.0pt on input line 365.
+(Font)              scaled to size 12.0pt on input line 389.
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 365.
- [6
+(Font)              scaled to size 10.0pt on input line 389.
+ [7
 
-] [7]
-<figures/wealth_over_time.png, id=110, 615.0177pt x 395.076pt>
+] [8]
+<figures/wealth_over_time.png, id=115, 615.0177pt x 395.076pt>
 File: figures/wealth_over_time.png Graphic file (type png)
 <use figures/wealth_over_time.png>
-Package pdftex.def Info: figures/wealth_over_time.png  used on input line 518.
+Package pdftex.def Info: figures/wealth_over_time.png  used on input line 542.
 (pdftex.def)             Requested size: 364.19669pt x 233.95486pt.
-<figures/gini_over_time.png, id=113, 618.6312pt x 395.076pt>
+<figures/gini_over_time.png, id=118, 618.6312pt x 395.076pt>
 File: figures/gini_over_time.png Graphic file (type png)
 <use figures/gini_over_time.png>
-Package pdftex.def Info: figures/gini_over_time.png  used on input line 531.
+Package pdftex.def Info: figures/gini_over_time.png  used on input line 555.
 (pdftex.def)             Requested size: 364.19669pt x 232.58643pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./figures/wealth_over_time.png>]
-<figures/final_wealth_histogram.png, id=123, 614.0541pt x 395.5578pt>
+ [9 <./figures/wealth_over_time.png>]
+<figures/final_wealth_histogram.png, id=128, 614.0541pt x 395.5578pt>
 File: figures/final_wealth_histogram.png Graphic file (type png)
 <use figures/final_wealth_histogram.png>
-Package pdftex.def Info: figures/final_wealth_histogram.png  used on input line 544.
+Package pdftex.def Info: figures/final_wealth_histogram.png  used on input line 568.
 (pdftex.def)             Requested size: 364.19669pt x 234.60835pt.
- [9 <./figures/gini_over_time.png> <./figures/final_wealth_histogram.png>] [10] [11] (./symulacja_prostego_systemu_spoleczno-ekonomicznego.aux)
+ [10 <./figures/gini_over_time.png> <./figures/final_wealth_histogram.png>] [11] [12] (./symulacja_prostego_systemu_spoleczno-ekonomicznego.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1046,18 +1046,18 @@ Package logreq Info: Writing requests to 'symulacja_prostego_systemu_spoleczno-e
 
  ) 
 Here is how much of TeX's memory you used:
- 27761 strings out of 467525
- 477044 string characters out of 5418982
- 1442190 words of memory out of 5000000
- 55961 multiletter control sequences out of 15000+600000
- 702383 words of font info for 294 fonts, out of 8000000 for 9000
+ 27821 strings out of 467525
+ 477657 string characters out of 5418982
+ 1442301 words of memory out of 5000000
+ 55967 multiletter control sequences out of 15000+600000
+ 710392 words of font info for 330 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,84p,1288b,1748s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on symulacja_prostego_systemu_spoleczno-ekonomicznego.pdf (11 pages, 571607 bytes).
+Output written on symulacja_prostego_systemu_spoleczno-ekonomicznego.pdf (12 pages, 573390 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 76 named destinations out of 1000 (max. 500000)
- 80400 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 210 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 88592 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber symulacja_prostego_systemu_spoleczno-ekonomicznego"] 1777151839.14672 "symulacja_prostego_systemu_spoleczno-ekonomicznego.bcf" "symulacja_prostego_systemu_spoleczno-ekonomicznego.bbl" "symulacja_prostego_systemu_spoleczno-ekonomicznego" 1783235242.2684 0
+["biber symulacja_prostego_systemu_spoleczno-ekonomicznego"] 1777151839.14672 "symulacja_prostego_systemu_spoleczno-ekonomicznego.bcf" "symulacja_prostego_systemu_spoleczno-ekonomicznego.bbl" "symulacja_prostego_systemu_spoleczno-ekonomicznego" 1783235793.4554 0
   "bibliography.bib" 1777151838.94658 2174 3e0baf84fe35c93e27555413236cec8b ""
-  "symulacja_prostego_systemu_spoleczno-ekonomicznego.bcf" 1783235242.20926 108948 64a7760c1fde0505a60a64c2c264899e "pdflatex"
+  "symulacja_prostego_systemu_spoleczno-ekonomicznego.bcf" 1783235793.3976 108948 64a7760c1fde0505a60a64c2c264899e "pdflatex"
   (generated)
   "symulacja_prostego_systemu_spoleczno-ekonomicznego.bbl"
   "symulacja_prostego_systemu_spoleczno-ekonomicznego.blg"
   (rewritten before read)
-["pdflatex"] 1783235240.76403 "/Users/dmatras/Documents/WSZIB/MiSS/document/symulacja_prostego_systemu_spoleczno-ekonomicznego.tex" "symulacja_prostego_systemu_spoleczno-ekonomicznego.pdf" "symulacja_prostego_systemu_spoleczno-ekonomicznego" 1783235242.26865 0
-  "/Users/dmatras/Documents/WSZIB/MiSS/document/symulacja_prostego_systemu_spoleczno-ekonomicznego.tex" 1783234436.00191 29466 e803f6343fd4d2d20f81f4a6fddc5426 ""
+["pdflatex"] 1783235791.89026 "/Users/dmatras/Documents/WSZIB/MiSS/document/symulacja_prostego_systemu_spoleczno-ekonomicznego.tex" "symulacja_prostego_systemu_spoleczno-ekonomicznego.pdf" "symulacja_prostego_systemu_spoleczno-ekonomicznego" 1783235793.45562 0
+  "/Users/dmatras/Documents/WSZIB/MiSS/document/symulacja_prostego_systemu_spoleczno-ekonomicznego.tex" 1783235791.68478 31126 9e2ba116faa485e1b5e61ca91e4322e4 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc" 1558214095 7631 5169ff1acd97ff1c4ab83563c99f96f4 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -180,10 +180,10 @@
   "figures/gini_over_time.png" 1783235240.48997 235472 415340d13e165cc866574176d7efafbf ""
   "figures/wealth_over_time.png" 1783235240.38396 175065 778d85b1c75d83c165fdfa64f323b5b8 ""
   "projectreport.cls" 1777149857.39232 2225 d712b47002969b092ed1bf9b810f89e3 ""
-  "symulacja_prostego_systemu_spoleczno-ekonomicznego.aux" 1783235242.20612 6714 2f791ab746acf2e5a8e7a62f3c7d03f1 "pdflatex"
+  "symulacja_prostego_systemu_spoleczno-ekonomicznego.aux" 1783235793.39455 6719 530e7e237c8eb498e7047e06699ac0cf "pdflatex"
   "symulacja_prostego_systemu_spoleczno-ekonomicznego.bbl" 1777151840.52571 11232 c67d776bc713a8065cba7e491b4da66d "biber symulacja_prostego_systemu_spoleczno-ekonomicznego"
-  "symulacja_prostego_systemu_spoleczno-ekonomicznego.run.xml" 1783235242.20988 2628 b2675d518c33d1b4da38fca9f9091ac6 "pdflatex"
-  "symulacja_prostego_systemu_spoleczno-ekonomicznego.tex" 1783234436.00191 29466 e803f6343fd4d2d20f81f4a6fddc5426 ""
+  "symulacja_prostego_systemu_spoleczno-ekonomicznego.run.xml" 1783235793.39811 2628 b2675d518c33d1b4da38fca9f9091ac6 "pdflatex"
+  "symulacja_prostego_systemu_spoleczno-ekonomicznego.tex" 1783235791.68478 31126 9e2ba116faa485e1b5e61ca91e4322e4 ""
   (generated)
   "symulacja_prostego_systemu_spoleczno-ekonomicznego.aux"
   "symulacja_prostego_systemu_spoleczno-ekonomicznego.bcf"
