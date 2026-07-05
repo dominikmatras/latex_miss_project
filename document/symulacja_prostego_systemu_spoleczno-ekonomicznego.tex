@@ -10,6 +10,7 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{grffile}
+\usepackage{float}
 
 \usepackage[bookmarks=false]{hyperref}
 \hypersetup{colorlinks,
@@ -24,6 +25,7 @@
 \usepackage[svgnames]{xcolor}
 \usepackage{inconsolata}
 \usepackage{fancyhdr}
+\usepackage{microtype} 
 
 \usepackage{csquotes}
 \DeclareQuoteStyle[quotes]{polish}
@@ -145,7 +147,7 @@ stabilizacja systemu lub jego destabilizacja.
 \label{sec:abm}
 
 Modelowanie agentowe jest szczeg\'olnie przydatne w~analizie system\'ow
-spo\l{}eczno-ekonomicznych, poniewa\.{z} umo\.{z}liwia uwzgl\k{e}dnienie r\'o\.{z}norodno\'sci uczestnik\'ow
+spo\l{}eczno-\allowbreak ekonomicznych, poniewa\.{z} umo\.{z}liwia uwzgl\k{e}dnienie r\'o\.{z}norodno\'sci uczestnik\'ow
 systemu. Ka\.{z}dy agent mo\.{z}e mie\'{c} inne zasoby finansowe, inne potrzeby, inne strategie
 dzia\l{}ania oraz inn\k{a} sk\l{}onno\'s\'{c} do oszcz\k{e}dzania lub wydawania pieni\k{e}dzy. W~przeciwie\'nstwie
 do modeli opartych wy\l{}\k{a}cznie na warto\'sciach \'srednich, modele agentowe pozwalaj\k{a}
@@ -420,13 +422,204 @@ rozwoju bardziej zaawansowanych symulacji.
 \section{\SectionTitleExperiments}
 \label{sec:experiments}
 
-\emph{Wyniki bada\'n eksperymentalnych wraz ze szczeg\'o\l{}owymi analizami i~komentarzami.}
+W celu sprawdzenia dzia{\l}ania opracowanego modelu przeprowadzono seri{\k e}
+eksperymentów symulacyjnych. Eksperymenty mia{\l}y na celu obserwacj{\k e} zmian
+poziomu maj{\k a}tku agentów w czasie oraz sprawdzenie, w jaki sposób prosty
+mechanizm redystrybucji wp{\l}ywa na poziom nierówno{\'s}ci maj{\k a}tkowych.
+
+Symulacj{\k e} wykonano dla populacji sk{\l}adaj{\k a}cej si{\k e} ze 100 agentów.
+Ka{\.z}dy agent na pocz{\k a}tku posiada{\l} taki sam maj{\k a}tek pocz{\k a}tkowy równy
+100 jednostek. Symulacja trwa{\l}a 100 iteracji. W ka{\.z}dym kroku czasowym agent
+otrzymywa{\l} losowy dochód z zakresu od 5 do 15 jednostek oraz ponosi{\l} losowe
+koszty utrzymania z zakresu od 3 do 10 jednostek. Dodatkowo w ka{\.z}dej iteracji
+wykonywano losowe transakcje pomi{\k e}dzy parami agentów.
+
+Przeprowadzono trzy warianty eksperymentu:
+\begin{itemize}
+    \item wariant bez redystrybucji,
+    \item wariant z redystrybucj{\k a} na poziomie 5\%,
+    \item wariant z redystrybucj{\k a} na poziomie 10\%.
+\end{itemize}
+
+Dla ka{\.z}dego wariantu obliczono podstawowe statystyki, takie jak {\'s}redni,
+minimalny i maksymalny maj{\k a}tek agentów, odchylenie standardowe oraz
+wspó{\l}czynnik Giniego. Wspó{\l}czynnik Giniego wykorzystano jako miar{\k e}
+nierówno{\'s}ci maj{\k a}tkowych w populacji.
+
+\subsection{Parametry eksperymentu}
+
+W tabeli~\ref{tab:parameters} przedstawiono podstawowe parametry wykorzystane
+podczas eksperymentów.
+
+\begin{table}[H]
+\centering
+\caption{Parametry symulacji}
+\label{tab:parameters}
+\begin{tabular}{ll}
+\toprule
+Parametr & Warto{\'s}{\'c} \\
+\midrule
+Liczba agentów & 100 \\
+Liczba iteracji & 100 \\
+Maj{\k a}tek pocz{\k a}tkowy agenta & 100 \\
+Zakres dochodu & 5--15 \\
+Zakres kosztów utrzymania & 3--10 \\
+Liczba transakcji w iteracji & 50 \\
+Analizowane poziomy redystrybucji & 0\%, 5\%, 10\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Wyniki eksperymentów}
+
+W tabeli~\ref{tab:results} przedstawiono wyniki ko{\'n}cowe uzyskane po 100
+iteracjach symulacji. Wyniki pokazuj{\k a}, {\.z}e zastosowanie redystrybucji nie
+zmienia {\'s}redniego maj{\k a}tku populacji, ale wyra{\'z}nie zmniejsza rozrzut
+maj{\k a}tku pomi{\k e}dzy agentami.
+
+\begin{table}[H]
+\centering
+\caption{Wyniki ko{\'n}cowe symulacji dla ró{\.z}nych wariantów redystrybucji}
+\label{tab:results}
+\begin{tabular}{rrrrrr}
+\toprule
+Redystrybucja & {\'S}redni maj{\k a}tek & Minimum & Maksimum & Odch. std. & Gini \\
+\midrule
+0\%  & 447.50 & 296.00 & 639.00 & 68.77 & 0.086 \\
+5\%  & 447.50 & 380.05 & 500.18 & 24.18 & 0.031 \\
+10\% & 447.50 & 396.49 & 485.09 & 16.93 & 0.021 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Na podstawie tabeli~\ref{tab:results} mo{\.z}na zauwa{\.z}y{\'c}, {\.z}e w wariancie bez
+redystrybucji ró{\.z}nice pomi{\k e}dzy agentami s{\k a} najwi{\k e}ksze. Minimalny
+maj{\k a}tek wyniós{\l} 296 jednostek, natomiast maksymalny 639 jednostek. Oznacza to,
+{\.z}e mimo identycznego maj{\k a}tku pocz{\k a}tkowego agenci po pewnym czasie zacz{\k e}li
+ró{\.z}ni{\'c} si{\k e} poziomem zgromadzonych zasobów.
+
+Wprowadzenie redystrybucji na poziomie 5\% zmniejszy{\l}o ró{\.z}nice maj{\k a}tkowe.
+Minimalny maj{\k a}tek wzrós{\l} do 380.05 jednostek, a maksymalny spad{\l} do
+500.18 jednostek. Jeszcze silniejszy efekt zaobserwowano przy redystrybucji
+10\%, gdzie minimalny maj{\k a}tek wyniós{\l} 396.49 jednostek, a maksymalny
+485.09 jednostek.
+
+\subsection{Wizualizacja wyników}
+
+Rysunek~\ref{fig:wealth_over_time} przedstawia zmian{\k e} minimalnego, {\'s}redniego
+i maksymalnego maj{\k a}tku agentów w kolejnych iteracjach dla wariantu bez
+redystrybucji. Widoczne jest, {\.z}e {\'s}redni maj{\k a}tek systematycznie ro{\'s}nie,
+poniewa{\.z} dochody agentów s{\k a} przeci{\k e}tnie wy{\.z}sze ni{\.z} koszty utrzymania.
+Jednocze{\'s}nie wraz z up{\l}ywem czasu zwi{\k e}ksza si{\k e} odleg{\l}o{\'s}{\'c} pomi{\k e}dzy
+najbiedniejszymi i najbogatszymi agentami.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/wealth_over_time.png}
+\caption{Zmiana maj{\k a}tku agentów w czasie dla wariantu bez redystrybucji}
+\label{fig:wealth_over_time}
+\end{figure}
+
+Na rysunku~\ref{fig:gini_over_time} przedstawiono zmian{\k e} wspó{\l}czynnika
+Giniego w czasie dla trzech wariantów eksperymentu. Najwy{\.z}szy poziom
+nierówno{\'s}ci wyst{\k a}pi{\l} w wariancie bez redystrybucji. Warianty z
+redystrybucj{\k a} osi{\k a}gn{\k e}{\l}y ni{\.z}sze warto{\'s}ci wspó{\l}czynnika Giniego,
+co oznacza bardziej wyrównany rozk{\l}ad maj{\k a}tku.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/gini_over_time.png}
+\caption{Zmiana wspó{\l}czynnika Giniego w czasie}
+\label{fig:gini_over_time}
+\end{figure}
+
+Rysunek~\ref{fig:histogram} przedstawia ko{\'n}cowy rozk{\l}ad maj{\k a}tku agentów
+w wariancie bez redystrybucji. Histogram pokazuje, {\.z}e po 100 iteracjach
+agenci nie posiadaj{\k a} ju{\.z} takiego samego maj{\k a}tku. Cz{\k e}{\'s}{\'c} agentów
+zgromadzi{\l}a wi{\k e}ksze zasoby, natomiast inni zako{\'n}czyli symulacj{\k e} z
+ni{\.z}szym poziomem maj{\k a}tku.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/final_wealth_histogram.png}
+\caption{Ko{\'n}cowy rozk{\l}ad maj{\k a}tku agentów bez redystrybucji}
+\label{fig:histogram}
+\end{figure}
+
+\subsection{Analiza wyników}
+
+Uzyskane wyniki potwierdzaj{\k a}, {\.z}e nawet prosty model agentowy mo{\.z}e
+prowadzi{\'c} do powstawania nierówno{\'s}ci maj{\k a}tkowych. Wszyscy agenci
+rozpoczynali symulacj{\k e} z identycznym maj{\k a}tkiem, jednak losowe dochody,
+koszty oraz transakcje sprawi{\l}y, {\.z}e po pewnym czasie pojawi{\l}y si{\k e}
+ró{\.z}nice pomi{\k e}dzy uczestnikami systemu.
+
+Najwi{\k e}ksze nierówno{\'s}ci wyst{\k a}pi{\l}y w wariancie bez redystrybucji.
+Wspó{\l}czynnik Giniego wyniós{\l} w tym przypadku 0.086. Po zastosowaniu
+redystrybucji na poziomie 5\% wspó{\l}czynnik Giniego spad{\l} do 0.031, natomiast
+dla redystrybucji 10\% osi{\k a}gn{\k a}{\l} warto{\'s}{\'c} 0.021. Oznacza to, {\.z}e
+mechanizm redystrybucji ograniczy{\l} narastanie nierówno{\'s}ci maj{\k a}tkowych.
+
+Wa{\.z}nym wnioskiem jest równie{\.z} to, {\.z}e redystrybucja nie zmieni{\l}a
+{\'s}redniego maj{\k a}tku populacji. We wszystkich wariantach {\'s}redni maj{\k a}tek
+ko{\'n}cowy wyniós{\l} 447.50 jednostek. Ró{\.z}nice dotyczy{\l}y przede wszystkim
+sposobu podzia{\l}u maj{\k a}tku pomi{\k e}dzy agentów. Wariant z redystrybucj{\k a}
+prowadzi{\l} do bardziej równomiernego rozk{\l}adu zasobów, natomiast wariant bez
+redystrybucji sprzyja{\l} wi{\k e}kszemu rozwarstwieniu.
+
+Przeprowadzone eksperymenty pokazuj{\k a}, {\.z}e model mo{\.z}e by{\'c}
+wykorzystany do badania podstawowych mechanizmów spo{\l}eczno-ekonomicznych.
+Pomimo uproszczonej struktury pozwala on obserwowa{\'c} zale{\.z}no{\'s}{\'c}
+pomi{\k e}dzy lokalnymi decyzjami agentów a globalnym zachowaniem ca{\l}ego
+systemu. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\SectionTitleSummary}
 \label{sec:conclusions}
-
-\emph{Podsumowanie wynik\'ow bada\'n, wnioski oraz plany dalszych prac.}
+ 
+Celem pracy by\l{}o opracowanie oraz przeanalizowanie prostej symulacji systemu
+spo\l{}eczno-\allowbreak ekonomicznego opartej na modelu agentowym. W~przygotowanym modelu agenci
+reprezentowali uczestnik\'ow systemu ekonomicznego, kt\'orzy posiadali okre\'slony
+maj\k{a}tek, uzyskiwali doch\'od, ponosili koszty \.{z}ycia oraz uczestniczyli w~losowych
+transakcjach. Symulacja pozwoli\l{}a zaobserwowa\'{c}, w~jaki spos\'ob proste regu\l{}y zachowania
+jednostek mog\k{a} prowadzi\'{c} do zmian widocznych na poziomie ca\l{}ej populacji.
+ 
+Przeprowadzone eksperymenty pokaza\l{}y, \.{z}e nawet w~uproszczonym systemie, w~kt\'orym
+wszyscy agenci rozpoczynaj\k{a} symulacj\k{e} z~takim samym maj\k{a}tkiem, po pewnym czasie
+pojawiaj\k{a} si\k{e} r\'o\.{z}nice maj\k{a}tkowe. Wynika to z~losowego charakteru dochod\'ow, koszt\'ow
+oraz transakcji pomi\k{e}dzy agentami. W~wariancie bez redystrybucji r\'o\.{z}nice pomi\k{e}dzy
+najbiedniejszymi i~najbogatszymi agentami by\l{}y najwi\k{e}ksze, co by\l{}o widoczne zar\'owno
+na wykresach, jak i~w~warto\'sci wsp\'o\l{}czynnika Giniego.
+ 
+Istotnym wynikiem eksperyment\'ow by\l{}o wykazanie wp\l{}ywu redystrybucji na ograniczanie
+nier\'owno\'sci maj\k{a}tkowych. Wprowadzenie redystrybucji na poziomie 5\% oraz 10\%
+spowodowa\l{}o zmniejszenie rozrzutu maj\k{a}tku pomi\k{e}dzy agentami. Warto\'s\'{c} wsp\'o\l{}czynnika
+Giniego by\l{}a ni\.{z}sza dla wariant\'ow z~redystrybucj\k{a}, co oznacza bardziej r\'ownomierny
+podzia\l{} zasob\'ow w~populacji.
+ 
+Wa\.{z}nym wnioskiem jest r\'ownie\.{z} to, \.{z}e redystrybucja nie zmieni\l{}a \'sredniego maj\k{a}tku
+ca\l{}ej populacji. We wszystkich analizowanych wariantach \'sredni maj\k{a}tek ko\'ncowy by\l{}
+taki sam. Zmianie ulega\l{} natomiast spos\'ob podzia\l{}u maj\k{a}tku pomi\k{e}dzy agent\'ow. Oznacza
+to, \.{z}e mechanizm redystrybucji nie zwi\k{e}ksza\l{} ca\l{}kowitej ilo\'sci zasob\'ow w~systemie,
+ale wp\l{}ywa\l{} na ich bardziej r\'ownomierne rozmieszczenie.
+ 
+Opracowany model ma charakter uproszczony i~nie odwzorowuje w~pe\l{}ni rzeczywistej
+gospodarki. Nie uwzgl\k{e}dnia mi\k{e}dzy innymi inflacji, rynku pracy, kredyt\'ow, inwestycji,
+systemu bankowego ani bardziej z\l{}o\.{z}onych decyzji podejmowanych przez uczestnik\'ow
+rynku. Pomimo tych ogranicze\'n model spe\l{}nia swoje zadanie, poniewa\.{z} pozwala
+w~prosty spos\'ob pokaza\'{c} mechanizm powstawania nier\'owno\'sci oraz wp\l{}yw redystrybucji
+na ich ograniczanie.
+ 
+W~przysz\l{}o\'sci model mo\.{z}na rozbudowa\'{c} o~dodatkowe elementy, takie jak r\'o\.{z}ne klasy
+spo\l{}eczne, zr\'o\.{z}nicowane \'zr\'od\l{}a dochodu, podatki progresywne, inwestycje, kredyty,
+bezrobocie lub dziedziczenie maj\k{a}tku. Mo\.{z}liwe by\l{}oby r\'ownie\.{z} przeprowadzenie
+wi\k{e}kszej liczby eksperyment\'ow dla r\'o\.{z}nych parametr\'ow oraz por\'ownanie wynik\'ow
+z~bardziej zaawansowanymi modelami agentowymi opisywanymi w~literaturze.
+ 
+Podsumowuj\k{a}c, wykonana symulacja pokazuje, \.{z}e modelowanie agentowe mo\.{z}e by\'{c}
+przydatnym narz\k{e}dziem do analizy prostych system\'ow spo\l{}eczno-\allowbreak ekonomicznych.
+Nawet niewielki i~uproszczony model pozwala zaobserwowa\'{c} zale\.{z}no\'s\'{c} pomi\k{e}dzy
+dzia\l{}aniami pojedynczych agent\'ow a~globalnymi efektami widocznymi w~ca\l{}ym systemie.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \printbibliography

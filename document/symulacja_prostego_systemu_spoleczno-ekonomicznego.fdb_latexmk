@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber symulacja_prostego_systemu_spoleczno-ekonomicznego"] 1777151839.14672 "symulacja_prostego_systemu_spoleczno-ekonomicznego.bcf" "symulacja_prostego_systemu_spoleczno-ekonomicznego.bbl" "symulacja_prostego_systemu_spoleczno-ekonomicznego" 1780163694.71031 0
+["biber symulacja_prostego_systemu_spoleczno-ekonomicznego"] 1777151839.14672 "symulacja_prostego_systemu_spoleczno-ekonomicznego.bcf" "symulacja_prostego_systemu_spoleczno-ekonomicznego.bbl" "symulacja_prostego_systemu_spoleczno-ekonomicznego" 1783235015.5221 0
   "bibliography.bib" 1777151838.94658 2174 3e0baf84fe35c93e27555413236cec8b ""
-  "symulacja_prostego_systemu_spoleczno-ekonomicznego.bcf" 1780163694.65749 108948 64a7760c1fde0505a60a64c2c264899e "pdflatex"
+  "symulacja_prostego_systemu_spoleczno-ekonomicznego.bcf" 1783235015.46582 108948 64a7760c1fde0505a60a64c2c264899e "pdflatex"
   (generated)
   "symulacja_prostego_systemu_spoleczno-ekonomicznego.bbl"
   "symulacja_prostego_systemu_spoleczno-ekonomicznego.blg"
   (rewritten before read)
-["pdflatex"] 1780163693.87679 "/Users/dmatras/Documents/WSZIB/MiSS/symulacja_prostego_systemu_spoleczno-ekonomicznego.tex" "symulacja_prostego_systemu_spoleczno-ekonomicznego.pdf" "symulacja_prostego_systemu_spoleczno-ekonomicznego" 1780163694.71054 0
-  "/Users/dmatras/Documents/WSZIB/MiSS/symulacja_prostego_systemu_spoleczno-ekonomicznego.tex" 1780163693.68103 19393 6c3696d9e2f8080ab7a487e8cbdd5046 ""
+["pdflatex"] 1783235013.86123 "/Users/dmatras/Documents/WSZIB/MiSS/document/symulacja_prostego_systemu_spoleczno-ekonomicznego.tex" "symulacja_prostego_systemu_spoleczno-ekonomicznego.pdf" "symulacja_prostego_systemu_spoleczno-ekonomicznego" 1783235015.52231 0
+  "/Users/dmatras/Documents/WSZIB/MiSS/document/symulacja_prostego_systemu_spoleczno-ekonomicznego.tex" 1783234436.00191 29466 e803f6343fd4d2d20f81f4a6fddc5426 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc" 1558214095 7631 5169ff1acd97ff1c4ab83563c99f96f4 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -108,6 +108,7 @@
   "/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1759437024 46885 8953c67ffba03252c6090aa19568b8ba ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1739048179 31715 19e60610b63819fe670dfa1cd84a4e94 ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty" 1772916678 41904 7711079366884e0d15963c9d40019853 ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -141,6 +142,12 @@
   "/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstpatch.sty" 1710360531 353 9024412f43e92cd5b21fe9ded82d0610 ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.def" 1284153563 1620 fb1c32b818f2058eca187e5c41dfae77 ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/logreq/logreq.sty" 1284153563 6187 b27afc771af565d3a9ff1ca7d16d0d46 ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype-pdftex.def" 1772383374 49656 1c61dbb6f95479ba3d6c0033b53590e2 ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype.cfg" 1772383374 27642 f0cea12315babf4d40608f4eeb5c8458 ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype.sty" 1772383374 102845 043c56602c7d94c8a716319df1af5479 ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msa.cfg" 1772226603 5929 2b35ae0f0fb46984dfffa2bc9d09de5c ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg" 1772226603 5594 992ef5c3f8fd1168bb7101a957333065 ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-ptm.cfg" 1772226603 12427 a6802929d6bd2a4ba6d4f5db602da2b4 ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/multirow/multirow.sty" 1731446765 6696 886c9f3087d0b973ed2c19aa79cb3023 ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/mathptmx.sty" 1586716065 4631 6e41de2b7a83dfa5d2c4b0a2fe01f046 ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/omlztmcm.fd" 1137110629 411 12564a37a279e4e0b533cdf5e03eeb7c ""
@@ -169,11 +176,14 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1777151529 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1777151473 3636773 dca220b74857fa3d5672de5fb3d36b29 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
+  "figures/final_wealth_histogram.png" 1783235012.04235 76686 66abbc7607702c017adc10d0ac6eda79 ""
+  "figures/gini_over_time.png" 1783235011.95818 235404 6b475936fea92b92bf9172de08bd1cee ""
+  "figures/wealth_over_time.png" 1783235011.8475 185946 c2fabafe8289b0bba52edb83afd95baa ""
   "projectreport.cls" 1777149857.39232 2225 d712b47002969b092ed1bf9b810f89e3 ""
-  "symulacja_prostego_systemu_spoleczno-ekonomicznego.aux" 1780163694.65442 4740 b52712ac4d8cc4d1ec30be5ad040bd70 "pdflatex"
+  "symulacja_prostego_systemu_spoleczno-ekonomicznego.aux" 1783235015.46263 6714 2f791ab746acf2e5a8e7a62f3c7d03f1 "pdflatex"
   "symulacja_prostego_systemu_spoleczno-ekonomicznego.bbl" 1777151840.52571 11232 c67d776bc713a8065cba7e491b4da66d "biber symulacja_prostego_systemu_spoleczno-ekonomicznego"
-  "symulacja_prostego_systemu_spoleczno-ekonomicznego.run.xml" 1780163694.658 2628 b2675d518c33d1b4da38fca9f9091ac6 "pdflatex"
-  "symulacja_prostego_systemu_spoleczno-ekonomicznego.tex" 1780163693.68103 19393 6c3696d9e2f8080ab7a487e8cbdd5046 ""
+  "symulacja_prostego_systemu_spoleczno-ekonomicznego.run.xml" 1783235015.46633 2628 b2675d518c33d1b4da38fca9f9091ac6 "pdflatex"
+  "symulacja_prostego_systemu_spoleczno-ekonomicznego.tex" 1783234436.00191 29466 e803f6343fd4d2d20f81f4a6fddc5426 ""
   (generated)
   "symulacja_prostego_systemu_spoleczno-ekonomicznego.aux"
   "symulacja_prostego_systemu_spoleczno-ekonomicznego.bcf"
