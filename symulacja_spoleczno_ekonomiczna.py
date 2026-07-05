@@ -19,7 +19,7 @@ MAX_KOSZT = 10
 
 LICZBA_TRANSAKCJI_NA_ITERACJE = 50
 
-ZIARNO_LOSOWOSCI = 50
+ZIARNO_LOSOWOSCI = 10
 
 class Agent:
     def __init__(self, agent_id, wealth):
